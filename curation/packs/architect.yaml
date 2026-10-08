@@ -1,0 +1,10 @@
+schema: 1
+id: pack/architect
+title: Architect pack
+description: Architecture review, ADR generation and high-level design documentation helpers.
+roles: [architect]
+assets:
+  - agent/se-system-architecture-reviewer
+  - agent/adr-generator
+  - agent/arch
+  - agent/hlbpa

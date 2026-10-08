@@ -1,0 +1,5 @@
+# Replace @your-org/maintainers with your GitHub team or user.
+*                       @your-org/maintainers
+/registry/              @your-org/maintainers
+/.github/               @your-org/maintainers
+/cli/                   @your-org/maintainers

@@ -1,0 +1,15 @@
+schema: 1
+id: pack/devops
+title: DevOps pack
+description: CI/CD, Kubernetes, Terraform and GitHub Actions experts with matching best practices.
+roles: [devops]
+assets:
+  - agent/devops-expert
+  - agent/github-actions-expert
+  - agent/platform-sre-kubernetes
+  - agent/terraform-iac-reviewer
+  - agent/se-gitops-ci-specialist
+  - instruction/github-actions-ci-cd-best-practices
+  - instruction/containerization-docker-best-practices
+  - instruction/kubernetes-deployment-best-practices
+  - skill/github-actions-hardening

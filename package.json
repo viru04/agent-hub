@@ -1,0 +1,39 @@
+{
+  "name": "agenthub",
+  "version": "0.1.0",
+  "description": "Marketplace and one-command installer for Copilot tools, toolkits, agents, instructions and prompts",
+  "type": "module",
+  "bin": {
+    "agenthub": "cli/bin/agenthub.mjs"
+  },
+  "files": [
+    "cli",
+    "lib"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "vite --config web/vite.config.js",
+    "validate": "node scripts/validate.mjs",
+    "build": "node scripts/build.mjs",
+    "server": "node scripts/serve.mjs",
+    "test": "node --test test/e2e.test.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/dm-sans": "^5.3.0",
+    "@fontsource-variable/space-grotesk": "^5.3.0",
+    "@fontsource/dm-mono": "^5.3.0",
+    "lucide-react": "^1.52.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "tar": "^7.4.3",
+    "yaml": "^2.5.0",
+    "zod": "^3.23.8"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.2",
+    "vite": "^8.3.3"
+  }
+}

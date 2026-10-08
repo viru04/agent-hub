@@ -1,0 +1,7 @@
+# Keyword rules that tag upstream assets with roles. An asset with no match defaults to "developer".
+tester: [playwright, qa , test plan, e2e, end-to-end, bug hunting, tdd, test-driven, unit test, mstest, junit, regression, test automation]
+product-owner: [prd, product requirements, user story, user stories, acceptance criteria, backlog, roadmap, product manager, specification, refine, requirement]
+devops: [devops, terraform, kubernetes, docker, ci/cd, github actions, pipeline, infrastructure, bicep, helm, ansible]
+architect: [architect, adr, architecture, well-architected, system design]
+security: [security, owasp, vulnerability, threat model, sast, secrets]
+accessibility: [accessibility, wcag, a11y, aria]

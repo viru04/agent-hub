@@ -1,0 +1,12 @@
+# Where each asset type is installed. global = relative to the user's home, local = relative to the repo.
+# VERIFY against current GitHub Copilot docs. Hooks are repo-level only.
+schema: 1
+global:
+  agent: ".copilot/agents"
+  instruction: ".copilot/instructions"
+  skill: ".copilot/skills"
+local:
+  agent: ".github/agents"
+  instruction: ".github/instructions"
+  skill: ".github/skills"
+  hook: ".github/hooks"

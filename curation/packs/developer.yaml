@@ -1,0 +1,15 @@
+schema: 1
+id: pack/developer
+title: Developer pack
+description: Debugging, planning, code review and quality standards for day to day development.
+roles: [developer]
+assets:
+  - agent/debug
+  - agent/gem-debugger
+  - agent/plan
+  - agent/implementation-plan
+  - agent/address-comments
+  - agent/janitor
+  - instruction/code-review-generic
+  - instruction/security-and-owasp
+  - instruction/performance-optimization

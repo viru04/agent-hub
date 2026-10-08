@@ -1,0 +1,16 @@
+schema: 1
+id: pack/tester
+title: Tester pack
+description: Playwright and QA agents plus testing standards for e2e, exploratory and TDD work.
+roles: [tester]
+assets:
+  - agent/playwright-tester
+  - agent/qa-subagent
+  - agent/gem-browser-tester
+  - agent/accessibility-runtime-tester
+  - agent/tdd-red
+  - agent/tdd-green
+  - agent/tdd-refactor
+  - instruction/playwright-typescript
+  - instruction/qa-engineering-best-practices
+  - instruction/a11y

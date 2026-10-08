@@ -1,0 +1,13 @@
+schema: 1
+id: pack/product-owner
+title: Product owner pack
+description: PRD, issue refinement, specification and idea shaping helpers for product owners.
+roles: [product-owner]
+assets:
+  - agent/prd
+  - agent/refine-issue
+  - agent/se-product-manager-advisor
+  - agent/specification
+  - agent/simple-app-idea-generator
+  - skill/breakdown-feature-prd
+  - skill/create-github-issue-feature-from-specification

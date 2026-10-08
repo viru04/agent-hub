@@ -1,0 +1,1 @@
+{"name":"demo","description":"Demo plugin bundle.","version":"1.0.0","extensions":{"com.github.awesome-copilot":{"agents":["./agents/plain.md"],"skills":["./skills/demo-skill/"]}}}

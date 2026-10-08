@@ -1,0 +1,2 @@
+schema: 1
+source: { type: github, repo: example/fixture, ref: main }

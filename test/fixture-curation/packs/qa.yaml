@@ -1,0 +1,6 @@
+schema: 1
+id: pack/qa
+title: QA pack
+description: Fixture pack with an agent, an instruction and a skill.
+roles: [tester]
+assets: [agent/qa-bot, instruction/ts-style, skill/demo-skill]

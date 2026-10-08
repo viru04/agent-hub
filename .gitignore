@@ -1,0 +1,5 @@
+node_modules/
+dist/
+agenthub.lock
+.agenthub-tmp/
+*.bak

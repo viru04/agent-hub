@@ -1,0 +1,6 @@
+# The data source. agentHub never copies this content: it indexes it at a pinned commit.
+schema: 1
+source:
+  type: github
+  repo: github/awesome-copilot
+  ref: main
