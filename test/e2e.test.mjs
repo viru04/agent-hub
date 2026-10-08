@@ -5,6 +5,7 @@ import os from "node:os";
 import path from "node:path";
 import { execFile } from "node:child_process";
 import { fileURLToPath } from "node:url";
+import { createCartCommand, createInstallCommand } from "../web/src/cart.js";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const run = (cmd, args, opts) => new Promise((res) =>
@@ -19,6 +20,18 @@ const cli = (args, cwd, env = {}) => run("node", [path.join(root, "cli/bin/agent
 const readIndex = () => JSON.parse(fs.readFileSync(path.join(dist, "index.json"), "utf8"));
 
 test.before(async () => { const b = await build(); assert.equal(b.code, 0, b.stderr); });
+
+test("website install commands invoke the GitHub CLI before npm publication", () => {
+  const pageUrl = "https://agenthub.vercel.app/";
+  assert.equal(
+    createInstallCommand(["agent/playwright-tester"], "local", pageUrl),
+    "npx github:viru04/agent-hub install agent/playwright-tester --local --registry https://agenthub.vercel.app",
+  );
+  assert.match(
+    createCartCommand(["agent/playwright-tester"], "global", pageUrl),
+    /^npx github:viru04\/agent-hub install --cart [A-Za-z0-9_-]+ --registry https:\/\/agenthub\.vercel\.app$/,
+  );
+});
 
 test("curation overlay validates", async () => {
   assert.equal((await run("node", ["scripts/validate.mjs"], { cwd: root })).code, 0);

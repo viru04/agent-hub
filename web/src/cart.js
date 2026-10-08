@@ -1,3 +1,5 @@
+const CLI_PACKAGE = "github:viru04/agent-hub";
+
 const toBase64Url = (value) =>
   btoa(Array.from(new TextEncoder().encode(value), (byte) => String.fromCharCode(byte)).join(""))
     .replace(/\+/g, "-")
@@ -32,10 +34,10 @@ export function restoreCart(hash) {
 
 export function createInstallCommand(items, scope, pageUrl) {
   const registry = new URL("./", pageUrl).href.replace(/\/$/, "");
-  return `npx agenthub install ${items.join(" ")} --${scope} --registry ${registry}`;
+  return `npx ${CLI_PACKAGE} install ${items.join(" ")} --${scope} --registry ${registry}`;
 }
 
 export function createCartCommand(items, scope, pageUrl) {
   const registry = new URL("./", pageUrl).href.replace(/\/$/, "");
-  return `npx agenthub install --cart ${encodeCart(scope, items)} --registry ${registry}`;
+  return `npx ${CLI_PACKAGE} install --cart ${encodeCart(scope, items)} --registry ${registry}`;
 }

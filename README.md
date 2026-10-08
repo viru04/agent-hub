@@ -56,7 +56,7 @@ node /path/to/agenthub/cli/bin/agenthub.mjs install skill/git-commit --global --
 2. *Publish registry* runs on every push and **daily**, re-indexing awesome-copilot and deploying to
    `https://<user>.github.io/<repo>`.
 3. Set `DEFAULT_REGISTRY` in `cli/src/registry.mjs` to that URL.
-4. Run without npm: `npx github:<user>/<repo> install pack/tester` (or `npm publish` for `npx agenthub ...`).
+4. The website's copied commands run the CLI from `github:viru04/agent-hub`, so they work before an npm release. After publishing the package, they can use `npx agenthub ...` instead.
 
 ## Commands
 
